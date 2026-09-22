@@ -4,30 +4,33 @@
 # links. Removing a link prevents it from showing in the header, but does not
 # prevent it from being included in the site.
 #
-# NOTE that only one of the CV options should be selected, the first is for the
-#      Markdown formatted page while the second is generated using JSON.
+# This nav matches the order/labels of the reference site Thomas asked to
+# match (yujin1007.github.io), minus Publications (no real content yet).
+# "About Me", "Educations", "News", and "Honors and Awards" are anchor links
+# that jump to sections on the homepage (_pages/about.md) — they don't have
+# their own page. "Projects" and "Teaching" are the two links that go to a
+# separate page, per Thomas's request. CV isn't in the top nav — it's a link
+# in the sidebar instead (see _includes/author-profile.html / _config.yml
+# author.cv).
+#
+# If you add Publications back later (see HOW_TO_CUSTOMIZE.md), a natural
+# spot is right after "Projects", matching the reference site's order.
 
 main:
-  - title: "Publications"
-    url: /publications/
+  - title: "About Me"
+    url: /#about-me
 
-  - title: "Talks"
-    url: /talks/    
+  - title: "Education"
+    url: /#education
+
+  - title: "News"
+    url: /#news
+
+  - title: "Honors and Awards"
+    url: /#honors-and-awards
+
+  - title: "Projects"
+    url: /portfolio/
 
   - title: "Teaching"
-    url: /teaching/    
-    
-  - title: "Portfolio"
-    url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
-    
-  - title: "CV"
-    url: /cv/
-    
-  # - title: "CV"
-  #   url: /cv-json/
-    
-  - title: "Guide"
-    url: /markdown/
+    url: /teaching/

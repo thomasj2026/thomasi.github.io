@@ -37,3 +37,10 @@
     "layout/sidebar",
     "layout/json_cv"
 ;
+
+/* Homepage section headings (About Me, Educations, News, Honors and Awards,
+   Work Experience) sized closer to the reference site's compact style. */
+.page__content h1 {
+  font-size: 1.3em;
+  margin-top: 1.75em;
+}

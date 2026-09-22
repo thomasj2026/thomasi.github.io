@@ -155,7 +155,17 @@
 
   img {
     max-width: 175px;
+    width: 100%;
     border-radius: 50%;
+
+    // Force a square crop regardless of the source photo's own aspect
+    // ratio, then use object-fit/object-position to control which part
+    // of the photo shows inside that square (before it gets masked into
+    // a circle by border-radius above). See HOW_TO_CUSTOMIZE.md ->
+    // "Zoom / reposition your profile picture" for how to tune this.
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: 50% 50%; // "horizontal% vertical%" — raise the 2nd number to shift the crop up, lower it to shift down
 
     @include breakpoint($large) {
       padding: 5px;

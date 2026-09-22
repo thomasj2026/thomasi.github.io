@@ -15,7 +15,11 @@ $indent-var                 : 1.3em;
 
 /* System typefaces */
 $serif                      : Georgia, Times, serif;
-$sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+// Matches the font used on the reference site Thomas asked to match
+// (yujin1007.github.io). $sans-serif feeds $global-font-family,
+// $header-font-family, and $sans-serif-narrow below, so this one change
+// updates the whole site (nav, headings, body text) consistently.
+$sans-serif                 : "Trebuchet MS", Helvetica, sans-serif;
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
 
 /* Sans serif typefaces */

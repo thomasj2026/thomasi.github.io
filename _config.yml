@@ -3,61 +3,63 @@
 # This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve -l -H localhost`. If you change this file, please restart the 
+# `jekyll serve -l -H localhost`. If you change this file, please restart the
 # server process.
 
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Your Name / Site Title"
+title                    : "Thomas Istvan"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://academicpages.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
+name                     : &name "Thomas Istvan"
+description              : &description "Thomas Istvan — Robotics, Mechanical & Controls Engineering portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+# TODO(Thomas): confirm this is your actual GitHub username before deploying — inferred from this repo's folder name.
+url                      : https://thomasj2026.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "thomasj2026/thomasi.github.io" # TODO(Thomas): confirm this matches your GitHub username/repo exactly
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
-  uri              : # URL
-  email            : "none@example.org" 
+  avatar           : "headshot.jpg"
+  name             : "Thomas Istvan"
+  pronouns         : # example: "she/her"
+  bio              : "Mechanical Engineering student with an interest in robotics and controls."
+  location         : "Honolulu, HI"
+  employer         : "Cornell University"
+  uri              : # URL — add a personal site/blog here if you have one
+  email            : "ti237@cornell.edu"
+  cv               : "/files/thomas_istvan_resume.pdf" # shown as a button in the sidebar, under LinkedIn/GitHub
 
-  # Academic websites
-  academia         : # URL
-  arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  # Academic websites (leave blank if not applicable — blank fields are hidden automatically)
+  academia         : # URL  
+  arxiv            : # URL
+  googlescholar    : # URL
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "https://orcid.org/yourorcidurl"
+  orcid            : # URL
   semantic         : # URL
   ssrn             : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : # URL
   researchgate     : # URL
   scopus           : # URL
   zotero           : # URL
 
 
   # Repositories and software development
-  bitbucket        : # Username - Update with your username on the site
+  bitbucket        : # Username
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
-  kaggle           : # Username  
-  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
+  github           : "thomasj2026"
+  kaggle           : # Username
+  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # Username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -66,7 +68,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "thomas-istvan1"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -83,11 +85,13 @@ author:
   zhihu            : # Username
 
 # Publication Category - The following the list of publication categories and their headings
+# (Not currently used — Thomas has no publications yet. Add entries to _publications/ and
+#  re-enable the "Publications" link in _data/navigation.yml if that changes.)
 publication_category:
   books:
     title: 'Books'
   manuscripts:
-    title: 'Journal Articles'    
+    title: 'Journal Articles'
   conferences:
     title: 'Conference Papers'
 
@@ -125,7 +129,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : true     # change to false to show the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 
 
@@ -148,9 +152,10 @@ og_description           :  # Social media default site image description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
+  type                   : Person
+  name                   : *name
   links: # An array of links to social media profiles
+    - "https://www.linkedin.com/in/thomas-istvan1"
 
 
 # Analytics
@@ -262,7 +267,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false # no "Share on" bar on teaching pages, per Thomas's request
       comments: true
   # _publications
   - scope:
@@ -280,7 +285,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false # no "Share on" bar on individual project pages, per Thomas's request
       comment: true
   # _talks
   - scope:
@@ -302,7 +307,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: Etc/UTC # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Pacific/Honolulu # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
