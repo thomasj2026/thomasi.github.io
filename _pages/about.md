@@ -7,22 +7,6 @@ redirect_from:
   - /about/
   - /about.html
 ---
-{% comment %}
-  This homepage mirrors the layout/order of yujin1007.github.io (per Thomas's
-  request): a single scrolling page with sections that match the top nav —
-  About Me, Educations, News, Honors and Awards — plus Work Experience at the
-  end (present on the page, not in the nav, same as the reference site).
-  "Projects" and "Teaching" in the top nav go straight to their own pages
-  (_pages/portfolio.html, _pages/teaching.html) instead of being sections
-  here — see _data/navigation.yml.
-
-  Easy edits:
-  * Headshot: swap images/headshot.jpg, or point _config.yml's author.avatar
-    at a new file.
-  * Each heading below has a line like `{: #about-me}` right under it — that
-    sets the anchor the nav bar jumps to. Keep it if you reword the heading.
-  * New News item: add a bullet at the top of the News section.
-{% endcomment %}
 
 # 🏖️ About Me
 {: #about-me}
