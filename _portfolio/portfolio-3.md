@@ -48,4 +48,4 @@ Designed and developed a 50-lb robot that inspects and climbs steel surfaces usi
 * Built a Python/C++ ROS 2 pipeline that fuses dual 9-DOF IMU streams through an Extended Kalman Filter, visualized live in RViz2
 * Built a Python tool that monitors battery-enclosure temperature within 5% of a reference sensor across a full runtime cycle
 
-**Skills:** Onshape · COMSOL Multiphysics · MATLAB · ROS2 · EKF · Onshape · Python
+**Skills:** Onshape · COMSOL Multiphysics · MATLAB · ROS2 · EKF · Python
