@@ -1,0 +1,26 @@
+---
+layout: archive
+title: "Travel"
+permalink: /travel/
+author_profile: true
+---
+
+{% include base_path %}
+
+<p>Places I have been to throughout my life! Drag the globe to spin it, then click a pin (or pick a place below) to see photos!</p>
+
+<div class="travel">
+  <div class="travel__globe" id="travel-globe" aria-label="Interactive globe of places I have traveled"></div>
+  <div class="travel__panel" id="travel-panel">
+    <p class="travel__hint">Click a pin on the globe or choose a place from the list.</p>
+  </div>
+</div>
+
+<div class="travel__list" id="travel-list"></div>
+
+<script>
+  window.TRAVEL_BASE = "{{ base_path }}";
+  window.TRAVEL_PLACES = {{ site.data.travel | jsonify }};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/globe.gl@2"></script>
+<script src="{{ base_path }}/assets/js/travel-globe.js"></script>

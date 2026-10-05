@@ -156,7 +156,7 @@
   img {
     max-width: 175px;
     width: 100%;
-    border-radius: 50%;
+    border-radius: 0;
 
     // Force a square crop regardless of the source photo's own aspect
     // ratio, then use object-fit/object-position to control which part
@@ -168,7 +168,6 @@
     object-position: 50% 50%; // "horizontal% vertical%" — raise the 2nd number to shift the crop up, lower it to shift down
 
     @include breakpoint($large) {
-      padding: 5px;
       border: 1px solid var(--global-border-color);
     }
   }

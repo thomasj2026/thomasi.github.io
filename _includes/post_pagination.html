@@ -1,6 +1,28 @@
 {% include base_path %}
 
-{% if page.previous or page.next %}
+{% if page.collection == 'portfolio' %}
+  {% assign ordered_projects = site.portfolio | sort: 'date' | reverse %}
+  {% assign prev_project = nil %}
+  {% assign next_project = nil %}
+  {% for project in ordered_projects %}
+    {% if project.url == page.url %}
+      {% assign next_project = ordered_projects[forloop.index] %}
+      {% assign prev_index = forloop.index0 | minus: 1 %}{% unless forloop.first %}{% assign prev_project = ordered_projects[prev_index] %}{% endunless %}
+    {% endif %}
+  {% endfor %}
+  <nav class="pagination">
+    {% if prev_project %}
+      <a href="{{ base_path }}{{ prev_project.url }}" class="pagination--pager" title="{{ prev_project.title | markdownify | strip_html }}">Previous</a>
+    {% else %}
+      <a href="#" class="pagination--pager disabled">Previous</a>
+    {% endif %}
+    {% if next_project %}
+      <a href="{{ base_path }}{{ next_project.url }}" class="pagination--pager" title="{{ next_project.title | markdownify | strip_html }}">Next</a>
+    {% else %}
+      <a href="#" class="pagination--pager disabled">Next</a>
+    {% endif %}
+  </nav>
+{% elsif page.previous or page.next %}
   <nav class="pagination">
     {% if page.previous %}
       <a href="{{ base_path }}{{ page.previous.url }}" class="pagination--pager" title="{{ page.previous.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>

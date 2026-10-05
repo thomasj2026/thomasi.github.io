@@ -1,25 +1,29 @@
 ---
 title: "Reticle-Handling Robot Arm — ASML"
-excerpt: "Re-architected a legacy robot-arm control system and designed a custom end effector for precision reticle handling.<br/><img src='/images/500x300.png'>"
+excerpt: "Implementing custom control architecture and simulation for ASML's robot arm."
 collection: portfolio
-date: 2026-01-01
+role: "Robotics Engineer · ASML"
+dates: "Sept 2026 – Present"
+tech: ["ROS2", "LabVIEW", "Kinematics", "Jacobian force mapping"]
+date: 2026-09-01
+gallery:
+  - file: asml-logo.png
+    alt: "ASML logo"
+  - text: "More images coming soon"
+header:
+  teaser: portfolio/asml-logo.png
 ---
 
-{% comment %}
-  Replace the placeholder image, e.g.:
-  1. Drop a photo/diagram in images/portfolio/asml-arm.jpg
-  2. Change '/images/500x300.png' (excerpt above and <img> below) to
-     '/images/portfolio/asml-arm.jpg'
-{% endcomment %}
-<img src='/images/500x300.png' alt="ASML reticle-handling robot arm — add a real photo or diagram here">
+{% include gallery.html %}
 
-**Role:** Robotics Engineering Intern · ASML &nbsp;|&nbsp; **When:** 2025 – 2026
+**Role:** Robotics Engineer · ASML &nbsp;|&nbsp; **When:** Sept 2026 – Present
 
-Modernized the control system for a reticle-handling robot arm and engineered a custom end effector for precise pick-and-place of reticles.
+Modernizing the control system for a reticle-handling robot arm and engineered a custom end effector for precise pick-and-place of reticles.
 
-* Reverse-engineered a legacy LabVIEW control system and re-architected it as a modular ROS 2 control stack, improving maintainability and extensibility for future development
+* Reverse-engineering a legacy LabVIEW control system and re-architecting it as a modular ROS 2 control stack, improving maintainability and scalability for future development.
 * Derived the arm's forward and inverse kinematics and a Jacobian-based force mapping to support precise, repeatable motion control
-* Enabled precise pick-and-place of reticles by designing a custom end effector for the robotic arm, engineering the mechanical interface between the gripper and the arm's existing kinematic chain
+* Enabling precise pick-and-place of reticles by designing a custom end effector for the robotic arm, engineering the mechanical interface between the gripper and the arm's existing kinematic chain
+* Creating a Gazebo simulation to simulate low-level control architecture with MoveIt 2.
 
-**Tech:** ROS2 · LabVIEW · Kinematics · Jacobian force mapping · Mechanical design
+**Skills:** ROS2 · LabVIEW · Forward and Inverse Kinematics · Jacobian force mapping · Gazebo · MoveIt 2
 

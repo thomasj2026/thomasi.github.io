@@ -1,0 +1,189 @@
+- slug: kyoto
+  name: "Kyoto"
+  region: "Japan"
+  lat: 35.0116
+  lng: 135.7681
+  note: ""
+  photos:
+    - file: kyoto-kinkakuji.jpg
+      caption: "Kinkaku-ji (the Golden Pavilion)"
+    - file: kyoto-garden-bridge.jpg
+      caption: "Arched bridge in a garden"
+    - file: kyoto-temple-garden.jpg
+      caption: "Temple garden with a stone pagoda lantern"
+    - file: kyoto-pond.jpg
+      caption: "Pond and plum blossoms"
+    - file: kyoto-ninenzaka-night.jpg
+      caption: "Ninenzaka at night"
+    - file: kyoto-philosophers-path.jpg
+      caption: "Canal along the Philosopher's Path"
+- slug: tokyo
+  name: "Tokyo"
+  region: "Japan"
+  lat: 35.6762
+  lng: 139.6503
+  note: ""
+  photos:
+    - file: tokyo-shibuya-sky.jpg
+      caption: "Sunset over the city from Shibuya Sky"
+    - file: tokyo-sensoji-pagoda.jpg
+      caption: "Five-story pagoda at Senso-ji, Asakusa"
+    - file: tokyo-gundam.jpg
+      caption: "Life-size Unicorn Gundam statue in Odaiba"
+    - file: tokyo-ghibli-museum.jpg
+      caption: "Ghibli Museum, Mitaka"
+    - file: tokyo-waseda.jpg
+      caption: "Okuma Auditorium at Waseda University"
+    - file: tokyo-canal-night.jpg
+      caption: "Canal and skyline at night"
+    - file: tokyo-seaplane.jpg
+      caption: "Seaplane on the water"
+- slug: osaka
+  name: "Osaka"
+  region: "Japan"
+  lat: 34.6937
+  lng: 135.5023
+  note: ""
+  photos:
+    - file: osaka-harry-potter.jpg
+      caption: "Wizarding World of Harry Potter at Universal Studios Japan"
+    - file: osaka-dotonbori.jpg
+      caption: "Dotonbori canal and billboards"
+    - file: osaka-castle.jpg
+      caption: "Osaka Castle across the moat"
+- slug: nara
+  name: "Nara"
+  region: "Japan"
+  lat: 34.6851
+  lng: 135.8048
+  note: ""
+  photos:
+    - file: nara-todaiji.jpg
+      caption: "Todai-ji Great Buddha Hall"
+- slug: mt-fuji
+  name: "Mt. Fuji"
+  region: "Japan"
+  lat: 35.3606
+  lng: 138.7274
+  note: ""
+  photos:
+    - file: fuji-chureito-pagoda.jpg
+      caption: "Chureito Pagoda with Mt. Fuji in the distance"
+    - file: fuji-lake.jpg
+      caption: "Mt. Fuji across the lake"
+    - file: fuji-sunrise.jpg
+      caption: "Sunrise above the clouds"
+- slug: ramstein
+  name: "Ramstein"
+  region: "Germany"
+  lat: 49.4369
+  lng: 7.6003
+  note: ""
+  photos: []
+- slug: chicago
+  name: "Chicago"
+  region: "Illinois, USA"
+  lat: 41.8781
+  lng: -87.6298
+  note: ""
+  photos: []
+- slug: orlando
+  name: "Orlando"
+  region: "Florida, USA"
+  lat: 28.5383
+  lng: -81.3792
+  note: ""
+  photos: []
+- slug: paris
+  name: "Paris"
+  region: "France"
+  lat: 48.8566
+  lng: 2.3522
+  note: ""
+  photos: []
+- slug: rome
+  name: "Rome"
+  region: "Italy"
+  lat: 41.9028
+  lng: 12.4964
+  note: ""
+  photos: []
+- slug: brussels
+  name: "Brussels"
+  region: "Belgium"
+  lat: 50.8503
+  lng: 4.3517
+  note: ""
+  photos: []
+- slug: guam
+  name: "Guam"
+  region: "U.S. Territory"
+  lat: 13.4443
+  lng: 144.7937
+  note: ""
+  photos: []
+- slug: pittsburgh
+  name: "Pittsburgh"
+  region: "Pennsylvania, USA"
+  lat: 40.4406
+  lng: -79.9959
+  note: ""
+  photos:
+    - file: pittsburgh-cmu.jpg
+      caption: "Across the Carnegie Mellon campus"
+- slug: misawa
+  name: "Misawa"
+  region: "Japan"
+  lat: 40.6833
+  lng: 141.3667
+  note: ""
+  photos:
+    - file: misawa-sign.jpg
+      caption: "The MISAWA sign"
+- slug: hiroshima
+  name: "Hiroshima"
+  region: "Japan"
+  lat: 34.3853
+  lng: 132.4553
+  note: ""
+  photos:
+    - file: hiroshima-dome.jpg
+      caption: "Atomic Bomb Dome"
+- slug: oahu
+  name: "Oahu"
+  region: "Hawaii, USA"
+  lat: 21.4389
+  lng: -158.0
+  note: ""
+  photos:
+    - file: oahu-byodo-in.jpg
+      caption: "Byodo-In Temple"
+    - file: oahu-waikiki.jpg
+      caption: "View over Waikiki"
+    - file: oahu-hike.jpg
+      caption: "Hike overlooking the coast"
+- slug: ithaca
+  name: "Ithaca"
+  region: "New York, USA"
+  lat: 42.444
+  lng: -76.5019
+  note: ""
+  photos:
+    - file: ithaca-sunset.jpg
+      caption: "Sunset over the Cornell campus"
+    - file: ithaca-waterfall.jpg
+      caption: "Dam and waterfall"
+- slug: berlin
+  name: "Berlin"
+  region: "Germany"
+  lat: 52.52
+  lng: 13.405
+  note: ""
+  photos: []
+- slug: london
+  name: "London"
+  region: "United Kingdom"
+  lat: 51.5074
+  lng: -0.1278
+  note: ""
+  photos: []

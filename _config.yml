@@ -16,8 +16,8 @@ description              : &description "Thomas Istvan — Robotics, Mechanical 
 # TODO(Thomas): confirm this is your actual GitHub username before deploying — inferred from this repo's folder name.
 url                      : https://thomasj2026.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "thomasj2026/thomasi.github.io" # TODO(Thomas): confirm this matches your GitHub username/repo exactly
+baseurl                  : ""
+repository               : "thomasj2026/thomasj2026.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -27,9 +27,9 @@ author:
   avatar           : "headshot.jpg"
   name             : "Thomas Istvan"
   pronouns         : # example: "she/her"
-  bio              : "Mechanical Engineering student with an interest in robotics and controls."
-  location         : "Honolulu, HI"
-  employer         : "Cornell University"
+  bio              : "Cornell University"
+  location         : "Ithaca, NY"
+  employer         : 
   uri              : # URL — add a personal site/blog here if you have one
   email            : "ti237@cornell.edu"
   cv               : "/files/thomas_istvan_resume.pdf" # shown as a button in the sidebar, under LinkedIn/GitHub
